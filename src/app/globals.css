@@ -1,0 +1,206 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #1F1D26;
+  --bg-card: #25232E;
+  --bg-surface: #2B2935;
+  --text-primary: #F5F5F5;
+  --text-secondary: #A7A5AE;
+  --border-subtle: rgba(255, 255, 255, 0.10);
+  --border-hover: rgba(255, 255, 255, 0.22);
+  --font-inter: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, "JetBrains Mono", "SFMono-Regular", Menlo, Monaco, Consolas, monospace;
+}
+
+.light {
+  --bg-primary: #F7F7F9;
+  --bg-card: #FFFFFF;
+  --bg-surface: #EEF0F3;
+  --text-primary: #121117;
+  --text-secondary: #585566;
+  --border-subtle: rgba(0, 0, 0, 0.08);
+  --border-hover: rgba(0, 0, 0, 0.20);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+html.light {
+  color-scheme: light;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  min-height: 100vh;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  overflow-x: hidden;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* Custom hairline borders and cards */
+.modular-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.modular-card:hover {
+  border-color: var(--border-hover);
+}
+
+/* Subtle grid background */
+.bg-grid-pattern {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.light .bg-grid-pattern {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bg-surface);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3e3b4d;
+}
+
+/* Monospace label tags */
+.mono-label {
+  font-family: var(--font-mono), monospace;
+  letter-spacing: 0.08em;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+/* Comprehensive Light Mode Styles */
+.light body {
+  background-color: #F7F7F9 !important;
+  color: #121117 !important;
+}
+
+.light .modular-card {
+  background-color: #FFFFFF !important;
+  border-color: rgba(0, 0, 0, 0.08) !important;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.04);
+}
+
+.light .modular-card:hover {
+  border-color: rgba(0, 0, 0, 0.18) !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08);
+}
+
+.light header {
+  background-color: rgba(247, 247, 249, 0.90) !important;
+  border-color: rgba(0, 0, 0, 0.08) !important;
+}
+
+.light footer {
+  background-color: #ECEEF1 !important;
+  border-color: rgba(0, 0, 0, 0.08) !important;
+  color: #4B5563 !important;
+}
+
+.light .text-white {
+  color: #121117 !important;
+}
+
+.light .text-\[\#F5F5F5\] {
+  color: #121117 !important;
+}
+
+.light .text-\[\#A7A5AE\] {
+  color: #585566 !important;
+}
+
+.light .text-white\/90,
+.light .text-white\/80,
+.light .text-white\/70 {
+  color: #2D2B37 !important;
+}
+
+.light .text-white\/50,
+.light .text-white\/40,
+.light .text-white\/30 {
+  color: #6E6B7C !important;
+}
+
+.light .bg-\[\#1F1D26\] {
+  background-color: #EEF0F3 !important;
+}
+
+.light .bg-\[\#25232E\] {
+  background-color: #FFFFFF !important;
+}
+
+.light .bg-\[\#2B2935\] {
+  background-color: #E6E8EC !important;
+}
+
+.light .bg-\[\#17151D\] {
+  background-color: #F1F3F6 !important;
+}
+
+.light .bg-\[\#211F2A\] {
+  background-color: #FFFFFF !important;
+}
+
+.light .bg-white\/5 {
+  background-color: rgba(0, 0, 0, 0.04) !important;
+}
+
+.light .bg-white\/10 {
+  background-color: rgba(0, 0, 0, 0.07) !important;
+}
+
+.light .border-white\/5,
+.light .border-white\/10,
+.light .border-white\/15,
+.light .border-white\/20,
+.light .border-white\/25,
+.light .border-white\/30 {
+  border-color: rgba(0, 0, 0, 0.08) !important;
+}
+
+.light input,
+.light textarea {
+  background-color: #FFFFFF !important;
+  border-color: rgba(0, 0, 0, 0.14) !important;
+  color: #121117 !important;
+}
+
+.light input::placeholder,
+.light textarea::placeholder {
+  color: rgba(0, 0, 0, 0.38) !important;
+}
+
+.light a.bg-white,
+.light button.bg-white {
+  background-color: #121117 !important;
+  color: #FFFFFF !important;
+}
+
+.light a.bg-white svg,
+.light button.bg-white svg {
+  color: #FFFFFF !important;
+}
