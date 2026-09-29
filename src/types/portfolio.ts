@@ -41,6 +41,7 @@ export interface Education {
 
 export interface Course {
   id: string;
+  slug: string;
   title: string;
   provider: string;
   date: string;
@@ -49,6 +50,11 @@ export interface Course {
   details?: string;
   score?: string;
   status?: "IN PROGRESS" | "COMPLETED";
+  skills?: string[];
+  skillsLearned?: string[];
+  certificateImage?: string;
+  certificateUrl?: string;
+  credentialId?: string;
 }
 
 export interface Language {

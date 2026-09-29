@@ -44,9 +44,9 @@ export default function Education() {
               </div>
 
               {/* Status Badge */}
-              <div className="self-start sm:self-auto font-mono text-xs px-3 py-1.5 rounded-full bg-[#2B2935] border border-white/10 text-white flex items-center gap-2">
-                <Calendar className="w-3.5 h-3.5 text-accent-green" />
-                <span>{education.period}</span>
+              <div className="self-start sm:self-auto font-mono text-xs px-3 py-1.5 rounded-full bg-[#2B2935] border border-white/10 text-white flex items-center gap-2 whitespace-nowrap shrink-0">
+                <Calendar className="w-3.5 h-3.5 text-accent-green shrink-0" />
+                <span className="whitespace-nowrap">{education.period}</span>
               </div>
             </div>
 

@@ -35,7 +35,7 @@ export default function Hero() {
 
             {/* Main Heading */}
             <h1 className="text-3xl sm:text-5xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-white leading-[1.15] sm:leading-[1.1] mb-6">
-              Building Intelligent Systems That Solve Real Problems.
+              {personalInfo.heroHeading}
             </h1>
 
             {/* Description */}

@@ -8,7 +8,7 @@ export const personalInfo: PersonalInfo = {
   email: "mohamedoail1113@gmail.com",
   phone: "01221828895",
   linkedInName: "Muhammed Hussein",
-  heroHeading: "Building Intelligent Systems That Solve Real Problems.",
+  heroHeading: "Muhamed Hussein Abd El-Azim.",
   heroDescription:
     "Motivated AI & ML Engineer with a solid foundation in Machine Learning, Deep Learning, and Computer Vision. Proficient in developing neural network models (CNNs, LSTMs, Transformers), data processing, and building automated workflows using modern AI tools and APIs. Dedicated to solving complex problems and deploying scalable intelligent systems.",
   heroMetadata: {
