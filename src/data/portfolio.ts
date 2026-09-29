@@ -187,6 +187,7 @@ export const projects: Project[] = [
 export const courses: Course[] = [
   {
     id: "course-1",
+    slug: "python-for-machine-learning",
     title: "Python for Machine Learning & Data Analysis",
     provider: "Digital Egypt Pioneers Initiative (DEPI) – MCIT",
     date: "01/2026 — 02/2026",
@@ -196,6 +197,7 @@ export const courses: Course[] = [
   },
   {
     id: "course-2",
+    slug: "ai-automation-diploma",
     title: "AI Automation Diploma",
     provider: "Route IT Training Center",
     date: "03/2026 — 06/2026",
@@ -204,6 +206,7 @@ export const courses: Course[] = [
   },
   {
     id: "course-3",
+    slug: "natural-language-processing",
     title: "Natural Language Processing (NLP)",
     provider: "National Telecommunication Institute (NTI) & ITIDA",
     date: "06/2026 — 07/2026",
@@ -213,13 +216,14 @@ export const courses: Course[] = [
   },
   {
     id: "course-4",
+    slug: "microsoft-machine-learning-engineer",
     title: "Microsoft Machine Learning Engineer",
     provider:
       "Digital Egypt Pioneers Initiative (DEPI) – Ministry of Communications and Information Technology (MCIT)",
     date: "07/2026 — 03/2027",
     status: "IN PROGRESS",
   },
-];
+]
 
 export const languages: Language[] = [
   {
